@@ -5,7 +5,7 @@ pragma solidity ^0.8.0;
 
 import "@openzeppelin/contracts/token/ERC721/ERC721.sol";
 
-contract PokeDIO is ERC721{
+contract PokeMetal is ERC721{
 
     struct Pokemon{
         string name;
@@ -16,7 +16,7 @@ contract PokeDIO is ERC721{
     Pokemon[] public pokemons;
     address public gameOwner;
 
-    constructor () ERC721 ("PokeDIO", "PKD"){
+    constructor () ERC721 ("PokeMetal", "PKM"){
 
         gameOwner = msg.sender;
 
